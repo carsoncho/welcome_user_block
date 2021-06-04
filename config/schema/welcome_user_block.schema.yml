@@ -1,7 +1,0 @@
-block.settings.welcome_user_block_authenticated_user_welcome_message:
-  type: block_settings
-  label: 'Authenticated User Welcome Message block'
-  mapping:
-    foo:
-      type: string
-      label: Foo
