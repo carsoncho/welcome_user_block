@@ -1,0 +1,14 @@
+{
+    "name": "carsoncho/welcome_user_block",
+    "description": "Custom user welcome block.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://drupal.org/project/advagg",
+    "authors": [
+        {
+            "name": "Carson Oldson (carsoncho)",
+            "homepage": "https://www.drupal.org/u/mikeytown2",
+            "role": "Creator, Maintainer"
+        }
+    ]
+}

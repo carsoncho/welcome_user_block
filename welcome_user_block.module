@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_theme()
+ */
+function welcome_user_block_theme() {
+  return [
+    'welcome_message' => [
+      'variables' => [
+        'welcome_message' => NULL,
+        'username' => NULL,
+        'last_login_date' => NULL,
+        'link' => NULL,
+      ],
+      'template' => 'welcome-message'
+    ]
+  ];
+}

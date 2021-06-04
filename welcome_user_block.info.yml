@@ -1,0 +1,7 @@
+name: 'Welcome User Block'
+type: module
+description: 'Creates a custom block that displays a welcome message to the user and their last login info.'
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - block
