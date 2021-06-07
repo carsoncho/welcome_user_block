@@ -4,6 +4,7 @@ namespace Drupal\welcome_user_block\Plugin\Block;
 
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Cache\Cache;
 use Drupal\Core\Datetime\DateFormatter;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
@@ -205,6 +206,13 @@ class AuthenticatedUserWelcomeMessageBlock extends BlockBase implements Containe
     ];
 
     return $build;
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  public function getCacheContexts() {
+    return Cache::mergeContexts(parent::getCacheContexts(), ['user']);
   }
 
 }
